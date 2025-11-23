@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📸 Next.js Image Cropper Tool (Open Source)
 
-## Getting Started
+[![GitHub](https://img.shields.io/badge/GitHub-Project-blue?style=flat-square&logo=github)](https://github.com/WebShardow/nextjs-crop-image-tools)
 
-First, run the development server:
+เครื่องมือโอเพนซอร์สที่สร้างขึ้นด้วย **Next.js App Router** เพื่อการครอบตัดรูปภาพ (Image Cropping) ที่มีประสิทธิภาพและรวดเร็ว รองรับการเลือกอัตราส่วน (Aspect Ratio) ที่หลากหลาย และการครอบตัดรูปทรงวงกลม
+
+โครงการนี้ **ไม่มีการพึ่งพาไลบรารี Web3** (เช่น Wagmi หรือ RainbowKit) ทำให้มีขนาดเล็กและมุ่งเน้นที่ฟังก์ชัน UI โดยเฉพาะ
+
+***
+
+## ✨ คุณสมบัติหลัก
+
+* **Next.js App Router Structure:** ใช้โครงสร้าง App Router และ Tailwind CSS v4
+* **Real-time Cropping:** ครอบตัดรูปภาพแบบเรียลไทม์ด้วยไลบรารี `react-easy-crop`
+* **Shape Selection:** รองรับการครอบตัดแบบสี่เหลี่ยมจัตุรัส (1:1), สี่เหลี่ยมอิสระ, และวงกลม
+* **Pure Frontend Utility:** เป็นเครื่องมือที่ทำงานฝั่งไคลเอนต์ 100%
+
+## 🚀 การติดตั้งและเริ่มต้น
+
+โครงการนี้เป็น **Open Source** และให้บริการ **ฟรีโดยไม่คิดค่าใช้จ่าย** สามารถนำไปใช้งาน พัฒนาต่อ หรือปรับใช้ในเชิงพาณิชย์ได้
+
+### 1. Requirements
+
+* Node.js (LTS version)
+* npm หรือ yarn/pnpm
+
+### 2. ติดตั้ง Dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+# หรือ
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. รัน Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```Bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+แอปพลิเคชันจะเปิดขึ้นที่ [http://localhost:3000](http://localhost:3000) (หรือพอร์ตที่ว่างอยู่)
 
-## Learn More
+## 🙏 เชิญชวนเข้าร่วมพัฒนา (Contributing)
 
-To learn more about Next.js, take a look at the following resources:
+**เรายินดีอย่างยิ่งที่จะได้รับความช่วยเหลือจากทุกท่านในการพัฒนาเครื่องมือนี้ให้ดียิ่งขึ้น!**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**ร่วมทดสอบ** : ช่วยค้นหา Bug หรือข้อผิดพลาดในการใช้งานบนอุปกรณ์และเบราว์เซอร์ต่างๆ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**เสนอแนะ** : เสนอคุณสมบัติใหม่ๆ ที่คุณต้องการ
 
-## Deploy on Vercel
+**เขียนโค้ด** : ส่ง Pull Request เพื่อแก้ไข Bug หรือเพิ่มคุณสมบัติต่างๆ
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 ร่วมพัฒนาได้ที่ : [https://github.com/WebShardow/nextjs-crop-image-tools](https://github.com/WebShardow/nextjs-crop-image-tools)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💖 Credits
+
+โครงการนี้สร้างขึ้นโดยมีจุดมุ่งหมายเพื่อเป็นเครื่องมือ Open Source ที่มีประโยชน์
+
+Concept & Architecture : [microtronic.biz](https://microtronic.biz/)
+
+Initial Developer : [WebShardow](https://github.com/WebShardow/)

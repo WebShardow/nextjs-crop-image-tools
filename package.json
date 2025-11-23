@@ -9,9 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/react-easy-crop": "^1.16.0",
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-easy-crop": "^5.5.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

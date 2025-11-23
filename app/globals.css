@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* // 💡 แก้ไข: ลบโค้ดส่วนนี้ออกเพื่อป้องกันข้อผิดพลาด "Unknown at rule @theme"
+// @theme inline {
+//   --color-background: var(--background);
+//   --color-foreground: var(--foreground);
+//   --font-sans: var(--font-geist-sans);
+//   --font-mono: var(--font-geist-mono);
+// } 
+*/
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #3c798f;
+        --foreground: #4e4e4e;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
